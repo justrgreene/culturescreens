@@ -84,11 +84,13 @@ button, input { font: inherit; }
 @keyframes ticker-scroll { to { transform: translateX(-50%); } }
 
 .section-pad { padding-right: 10vw; padding-left: 10vw; }
-.intro-section { position: relative; padding-top: 8.5rem; padding-bottom: 9.5rem; }
+.intro-section { position: relative; overflow: hidden; padding-top: 8.5rem; padding-bottom: 9.5rem; background: var(--white); }
+.intro-tv { position: absolute; z-index: 0; top: 24%; right: 1%; width: clamp(380px, 58vw, 820px); height: auto; opacity: .14; pointer-events: none; }
 .eyebrow { display: flex; gap: .8rem; align-items: center; margin: 0 0 2.4rem; text-transform: uppercase; }
 .eyebrow span { color: var(--muted); }
 .display-heading { margin: 0; font: 500 clamp(3rem, 7vw, 7rem)/.93 var(--display); letter-spacing: -.085em; }
 .display-heading em, .page-title em, .quote-line em { color: var(--red); font-style: normal; }
+.intro-section > .eyebrow, .intro-grid, .intro-section > .index-ornament { position: relative; z-index: 1; }
 .intro-grid { display: grid; grid-template-columns: 1.3fr .7fr; align-items: end; gap: 6vw; }
 .intro-copy { max-width: 325px; padding-bottom: .35rem; }
 .intro-copy p, .article-copy p { margin: 0 0 1.5rem; font-size: 1rem; line-height: 1.75; }
@@ -225,6 +227,7 @@ button, input { font: inherit; }
   .hero-note { max-width: 90px; font-size: .5rem; }
   .section-pad { padding-right: 6vw; padding-left: 6vw; }
   .intro-section { padding-top: 5rem; padding-bottom: 6rem; }
+  .intro-tv { top: 30%; right: -28%; width: 100vw; opacity: .1; }
   .intro-grid, .newsletter-row { grid-template-columns: 1fr; gap: 2rem; }
   .display-heading { font-size: clamp(3.2rem, 12vw, 5.5rem); }
   .intro-copy { max-width: 440px; margin-left: auto; }
