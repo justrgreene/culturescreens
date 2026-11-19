@@ -125,22 +125,8 @@ button, input { font: inherit; }
 .story-card:hover .card-arrow { transform: translate(3px,-3px); }
 
 .manifesto { position: relative; min-height: 560px; overflow: hidden; padding: 2rem 10vw 3rem; background: var(--red); color: var(--white); isolation: isolate; }
-.binary-rain { position: absolute; z-index: 0; inset: 0; overflow: hidden; color: rgba(255,253,249,.68); opacity: .38; mix-blend-mode: screen; pointer-events: none; }
-.binary-column { position: absolute; top: 0; bottom: 0; width: 8%; overflow: hidden; font: 500 clamp(.5rem, .8vw, .72rem)/1 var(--mono); letter-spacing: .12em; }
-.binary-column:nth-child(1) { left: 7%; }
-.binary-column:nth-child(2) { left: 23%; }
-.binary-column:nth-child(3) { left: 39%; }
-.binary-column:nth-child(4) { left: 55%; }
-.binary-column:nth-child(5) { left: 71%; }
-.binary-column:nth-child(6) { left: 87%; }
-.binary-track { position: absolute; top: -50%; left: 0; display: flex; width: 100%; height: 200%; flex-direction: column; animation: binary-cascade 16s linear infinite; }
-.binary-sequence { display: flex; flex: 0 0 50%; flex-direction: column; justify-content: space-around; white-space: nowrap; }
-.binary-column:nth-child(2) .binary-track { animation-duration: 21s; animation-delay: -7s; }
-.binary-column:nth-child(3) .binary-track { animation-duration: 18s; animation-delay: -12s; }
-.binary-column:nth-child(4) .binary-track { animation-duration: 23s; animation-delay: -4s; }
-.binary-column:nth-child(5) .binary-track { animation-duration: 19s; animation-delay: -15s; }
-.binary-column:nth-child(6) .binary-track { animation-duration: 24s; animation-delay: -10s; }
-@keyframes binary-cascade { to { transform: translateY(50%); } }
+.manifesto-punchcard { position: absolute; z-index: 0; top: 25%; left: 8%; width: 84%; height: auto; opacity: .5; animation: punchcard-drift 32s ease-in-out infinite alternate; pointer-events: none; }
+@keyframes punchcard-drift { from { transform: translate3d(-1.5%, 0, 0) rotate(-5deg); } to { transform: translate3d(1.5%, 0, 0) rotate(-2deg); } }
 .manifesto-top { position: relative; z-index: 1; display: flex; justify-content: space-between; text-transform: uppercase; }
 .manifesto-line { position: relative; z-index: 1; margin: 7rem 0 0 14%; font: 600 clamp(4rem, 11vw, 10.5rem)/.8 var(--display); letter-spacing: -.1em; }
 .manifesto-line em { color: var(--ink); font-style: normal; }
