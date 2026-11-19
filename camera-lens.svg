@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none">
+  <defs>
+    <radialGradient id="glass" cx="38%" cy="32%" r="74%">
+      <stop offset="0" stop-color="#637b8a"/>
+      <stop offset=".2" stop-color="#253c4a"/>
+      <stop offset=".45" stop-color="#10181e"/>
+      <stop offset=".7" stop-color="#35434c"/>
+      <stop offset=".86" stop-color="#111416"/>
+      <stop offset="1" stop-color="#050606"/>
+    </radialGradient>
+    <linearGradient id="barrel" x1="120" y1="80" x2="520" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8f6f1"/>
+      <stop offset=".16" stop-color="#666a6a"/>
+      <stop offset=".29" stop-color="#202222"/>
+      <stop offset=".5" stop-color="#a8a9a5"/>
+      <stop offset=".68" stop-color="#292b2b"/>
+      <stop offset=".84" stop-color="#d8d6cf"/>
+      <stop offset="1" stop-color="#303131"/>
+    </linearGradient>
+    <linearGradient id="innerRing" x1="215" y1="180" x2="441" y2="466" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b8b8b0"/>
+      <stop offset=".2" stop-color="#282a2b"/>
+      <stop offset=".48" stop-color="#888982"/>
+      <stop offset=".71" stop-color="#202223"/>
+      <stop offset="1" stop-color="#d2cfc5"/>
+    </linearGradient>
+    <linearGradient id="reflection" x1="245" y1="201" x2="425" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".8"/>
+      <stop offset=".4" stop-color="#b8d5e0" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flare" x1="341" y1="224" x2="479" y2="362" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".12" stop-color="#fff5df" stop-opacity=".96"/>
+      <stop offset=".42" stop-color="#ff6047" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#ff342b" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#fff" stop-opacity=".95"/>
+      <stop offset=".16" stop-color="#ffe8cb" stop-opacity=".65"/>
+      <stop offset=".46" stop-color="#ff4637" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#ff4637" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="glassClip"><circle cx="320" cy="320" r="151"/></clipPath>
+    <filter id="softGlow" x="257" y="146" width="344" height="344" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+  </defs>
+
+  <circle cx="320" cy="320" r="297" fill="#141515"/>
+  <circle cx="320" cy="320" r="280" fill="url(#barrel)"/>
+  <circle cx="320" cy="320" r="260" stroke="#111312" stroke-width="8"/>
+  <circle cx="320" cy="320" r="245" fill="#282a29" stroke="#dad8cf" stroke-opacity=".6" stroke-width="3"/>
+  <circle cx="320" cy="320" r="227" fill="url(#innerRing)"/>
+  <circle cx="320" cy="320" r="205" fill="#101212" stroke="#090a0a" stroke-width="8"/>
+  <circle cx="320" cy="320" r="177" fill="url(#barrel)" stroke="#d4d1c8" stroke-opacity=".72" stroke-width="3"/>
+  <circle cx="320" cy="320" r="160" fill="#080b0e" stroke="#111517" stroke-width="8"/>
+  <circle cx="320" cy="320" r="151" fill="url(#glass)" stroke="#777b7a" stroke-width="2"/>
+
+  <g clip-path="url(#glassClip)">
+    <path d="M170 333c33-69 82-108 144-119 47-8 92 3 143 37-54-16-100-8-136 17-44 30-73 77-151 109Z" fill="#b9d1db" fill-opacity=".12"/>
+    <path d="M191 202c49-43 110-60 176-44-57 9-91 35-118 75-20 29-34 61-62 78-14-36-13-75 4-109Z" fill="url(#reflection)"/>
+    <path d="M179 381c57-14 86-52 122-72 41-23 87-27 155-7-51 8-83 24-112 52-45 44-82 70-147 66Z" fill="#83a6b5" fill-opacity=".16"/>
+    <path d="M202 445c62-43 102-94 127-148 16-35 33-72 71-106" stroke="#fff" stroke-opacity=".28" stroke-width="2"/>
+    <path d="M175 282c38 15 73 15 103 2" stroke="#fff" stroke-opacity=".3" stroke-width="3"/>
+    <ellipse cx="288" cy="255" rx="56" ry="15" transform="rotate(-42 288 255)" fill="#fff" fill-opacity=".1"/>
+    <circle cx="429" cy="229" r="89" fill="url(#glow)" filter="url(#softGlow)"/>
+    <path d="m429 204 10 18 20 7-20 8-10 19-8-19-20-8 20-7 8-18Z" fill="#fff" fill-opacity=".9"/>
+    <circle cx="429" cy="229" r="13" fill="url(#flare)"/>
+    <path d="m428 161 2 47m-2 42 2 48m-68-69 47-2m42 2 48-2m-87-46 34 34m-1 0 34 34m-67-68-32-34m99 101 34 34" stroke="#ffe8d9" stroke-opacity=".55" stroke-width="2"/>
+    <circle cx="429" cy="229" r="3" fill="#fff"/>
+  </g>
+  <circle cx="320" cy="320" r="151" stroke="#f1eee5" stroke-opacity=".7" stroke-width="2"/>
+
+  <g fill="#e52d26">
+    <path d="M320 12l5 14-5 14-5-14 5-14Z"/>
+    <path d="m628 320-14 5-14-5 14-5 14 5Z"/>
+    <path d="m320 628-5-14 5-14 5 14-5 14Z"/>
+    <path d="m12 320 14-5 14 5-14 5-14-5Z"/>
+  </g>
+  <circle cx="320" cy="320" r="297" stroke="#f4f1eb" stroke-opacity=".7" stroke-width="2"/>
+</svg>
