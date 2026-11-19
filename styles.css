@@ -160,7 +160,8 @@ button, input { font: inherit; }
 .page-hero-foot { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: end; }
 .page-hero-foot > span { color: var(--muted); }
 .page-hero-foot p { max-width: 270px; margin: 0; font-size: .85rem; line-height: 1.5; }
-.paper-hero { min-height: 0; padding-top: 4rem; padding-bottom: 3.5rem; }
+.paper-hero { min-height: 0; padding-top: 4rem; padding-bottom: 3.5rem; background: linear-gradient(90deg, rgba(23,22,21,.8), rgba(23,22,21,.52) 65%, rgba(23,22,21,.36)), url("speculative-vision-title.jpg") center 48% / cover no-repeat; color: var(--white); }
+.paper-hero .eyebrow span, .paper-hero .page-hero-foot > span { color: rgba(255,253,249,.78); }
 .paper-title { max-width: 1150px; margin: 4rem 0 3rem; font-size: clamp(3.1rem, 8vw, 8.5rem); line-height: .95; letter-spacing: -.09em; }
 .paper-section { padding-top: 5rem; }
 .paper-content { max-width: 800px; margin: 0 auto; }
