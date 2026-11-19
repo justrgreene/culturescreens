@@ -6,9 +6,9 @@ A responsive, five-page editorial website template for GitHub Pages. It uses pla
 
 - `index.html` — home page
 - `about.html` — about the journal
-- `images.html` — content page: images
-- `stories.html` — content page: stories
-- `signals.html` — content page: signals
+- `images.html` — content page: nodes
+- `stories.html` — content page: transmissions
+- `signals.html` — content page: glitches
 
 ## Edit the site
 

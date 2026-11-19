@@ -160,6 +160,11 @@ button, input { font: inherit; }
 .page-hero-foot { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: end; }
 .page-hero-foot > span { color: var(--muted); }
 .page-hero-foot p { max-width: 270px; margin: 0; font-size: .85rem; line-height: 1.5; }
+.paper-hero { min-height: 0; padding-top: 4rem; padding-bottom: 3.5rem; }
+.paper-title { max-width: 1150px; margin: 4rem 0 3rem; font-size: clamp(3.1rem, 8vw, 8.5rem); line-height: .95; letter-spacing: -.09em; }
+.paper-section { padding-top: 5rem; }
+.paper-content { max-width: 800px; margin: 0 auto; }
+.paper-content p { margin: 0 0 1.6rem; font-size: clamp(1rem, 1.1vw, 1.1rem); line-height: 1.85; }
 .page-hero-art { position: absolute; top: 20%; right: 13%; display: flex; width: clamp(160px, 22vw, 270px); aspect-ratio: 1; flex-direction: column; align-items: center; justify-content: center; border-radius: 50%; background: var(--red); color: var(--white); text-align: center; font-size: .8rem; line-height: 1.4; transform: rotate(10deg); }
 .page-hero-art b { margin-top: .5rem; font: 500 1.6rem var(--display); }
 .about-art { display: block; height: auto; overflow: visible; border-radius: 0; background: none; transform: none; }
@@ -249,6 +254,11 @@ button, input { font: inherit; }
   .footer-copy { justify-self: end; }
   .page-hero { min-height: 570px; padding-top: 2.7rem; padding-bottom: 2.5rem; }
   .page-title { margin-top: 7rem; font-size: clamp(4.4rem, 13vw, 7rem); }
+  .paper-hero { min-height: 0; padding-top: 2.7rem; padding-bottom: 2.5rem; }
+  .paper-title { margin: 3.5rem 0 2.5rem; font-size: clamp(2.6rem, 10vw, 5rem); }
+  .paper-section { padding-top: 3rem; padding-bottom: 5rem; }
+  .paper-hero .page-hero-foot { align-items: center; gap: 1rem; }
+  .paper-hero .page-hero-foot .text-link { white-space: nowrap; }
   .page-hero-art { top: 22%; right: 9%; width: clamp(130px, 34vw, 210px); }
   .page-hero .about-art { top: auto; right: auto; left: 50%; width: clamp(406.25px, 106.25vw, 656.25px); margin-right: 0; margin-left: 0; transform: translateX(-50%); }
   .page-hero-foot p { max-width: 205px; font-size: .76rem; }
